@@ -125,20 +125,19 @@ adding and removing comments and tags, using JavaScript\par
 \par
 
 \pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl240\slmult1 helped to scope project functionality - (loading pre-selected recipes, not searching on ingredient size needed, etc).\par
-{\pntext\f1\'B7\tab}responsible for finding/using API to load price data\par
-{\pntext\f1\'B7\tab}researched APIs to find one best meeting our needs (Walmart)\par
-{\pntext\f1\'B7\tab}prototyped getting data from API, explained to team\par
-{\pntext\f1\'B7\tab}too much data returned for an item (ie chicken search returns 1000 finds including dog food)\par
-{\pntext\f1\'B7\tab}determined way of using csv file to load into my program to tell Walmart what specific items to get\par
-{\pntext\f1\'B7\tab}API limits/bad internet reliability in class/etc. determined that we get the data and load it into the database so that we could have reliable prototype to demonstrate\par
-{\pntext\f1\'B7\tab}prototype for loading JSON data returned from API into database, assisted other developer in finishing that program\par
 {\pntext\f1\'B7\tab}Database design with team\par
 {\pntext\f1\'B7\tab}Screen functionality design with team\par
-{\pntext\f1\'B7\tab}Thymeleaf for screens 4 -5\par
-
-\pard\sl240\slmult1\par
-\par
-\par
-\par
+{\pntext\f1\'B7\tab}Researched potential API\rquote s to use to get grocery price data\par
+{\pntext\f1\'B7\tab}Selected Walmart API, then worked with Leslie using Walmart\rquote s API developer console testing - determined that too much data was returned for each generalized query (such as \ldblquote chicken\rdblquote ).\par
+{\pntext\f1\'B7\tab}Prototyped programmatic calls to API to get pricing data and read the JSON data returned by the API.\par
+{\pntext\f1\'B7\tab}After prototyping and testing calls to the Walmart API, determined that the API was sometimes unreliable as far as being \ldblquote down\rdblquote , and that not all data was always present.\par
+{\pntext\f1\'B7\tab}Therefore, decided that the best way to populate our data with grocery selections and prices for each recipe ingredient needed for this app would be:\par
+{\pntext\f1\'B7\tab} Manually look up several items that would be suitable for each recipe ingredient using walmart.com and get the product id number\par
+{\pntext\f1\'B7\tab}Create and input file of product ids for each recipe so that the get price data program would read the input file, and call the API to get product information returned for each product ID in the input file and write the returned JSON data to an output file.\par
+{\pntext\f1\'B7\tab}Prototyped a program to read all JSON files from a directory and parse the files for data we use to update the database.  Also added logic to \ldblquote scrub\rdblquote  some html embedded in product descriptions\par
+{\pntext\f1\'B7\tab}Worked with Gene on delete ingredients\par
+{\pntext\f1\'B7\tab}Helped figure out & implement solution for getting ingredients sorted by tag into page 3 (the treemap in the getingredients method)\par
+{\pntext\f1\'B7\tab}Figured out solution for getting data from page 4 to page 5 with ProductSelections object, iter operator, and using store Item id as the index\par
+{\pntext\f1\'B7\tab}Figured out database issue with recipe not showing up on ingredient\par
 }
  
